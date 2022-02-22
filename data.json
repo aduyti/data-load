@@ -1,0 +1,7 @@
+[
+    { "name": { "firstName": "John", "lastName": "Doe" }, "type": "none", "age": 23 },
+    { "name": { "firstName": "Sakib", "lastName": "Hasan" }, "type": "cricket", "age": 35 },
+    { "name": { "firstName": "Mas", "lastName": "Taja" }, "type": "cricket", "age": 38 },
+    { "name": { "firstName": "Mara", "lastName": "Dona" }, "type": "football", "age": 70 },
+    { "name": { "firstName": "Jor", "lastName": "Dan" }, "type": "basketball", "age": 58 }
+]
