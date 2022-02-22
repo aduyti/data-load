@@ -10,9 +10,13 @@ function getUser() {
 }
 
 const imageBlock = document.getElementById('img-block');
-fetch('https://jsonplaceholder.typicode.com/photos/1')
+fetch('https://jsonplaceholder.typicode.com/photos')
     .then(response => response.json())
-    .then(data => showImage(data))
+    .then(data => showAll(data))
+
+function showAll(data) {
+    data.forEach(item => showImage(item));
+}
 
 function showImage(data) {
     const image = document.createElement('img');
@@ -20,6 +24,8 @@ function showImage(data) {
     image.id = data.id;
     image.title = data.title;
     image.width = 150;
+    image.style.margin = '5px';
+    image.style.border = '1px solid gray';
     imageBlock.appendChild(image);
 }
 
