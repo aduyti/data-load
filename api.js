@@ -10,7 +10,7 @@ function getUser() {
 }
 
 const imageBlock = document.getElementById('img-block');
-fetch('https://jsonplaceholder.typicode.com/photos')
+fetch('https://jsonplaceholder.typicode.com/albums/1/photos')
     .then(response => response.json())
     .then(data => showAll(data))
 
